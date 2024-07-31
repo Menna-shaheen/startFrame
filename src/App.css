@@ -1,0 +1,97 @@
+.active {
+    border: 10px solid transparent;
+    border-radius: 10px;
+    background-color: #1ABC9C;
+
+}
+.nav{
+  z-index: 99999;
+}
+.layer {
+
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.7s all;
+}
+
+.inner:hover .layer {
+    opacity: 1;
+}
+
+.modal-container {
+    background-color: rgba(13, 109, 253, 0.25);
+    z-index: 9999;
+}
+
+.modal-image {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+}
+/* Input container */
+.input-container {
+    position: relative;
+    margin: 20px;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  /* Input container */
+.input-container {
+    position: relative;
+    margin: 20px;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #20a176;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus-within + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: #20a176;
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
+ 
+  
